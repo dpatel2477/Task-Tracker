@@ -14,7 +14,7 @@ app.use(express.static("public"));
 const user=process.env.USERNAME;
 const pass=process.env.PASSWORD;
 
-mongoose.connect("mongodb+srv://" +user+":"+pass+"@cluster0.y2prv.mongodb.net/todoListDB", {useNewUrlParser:true,useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://admin-dhruv:admin@cluster0.y2prv.mongodb.net/todoListDB", {useNewUrlParser:true,useUnifiedTopology: true });
 
 const itemsSchema={
   name:String
